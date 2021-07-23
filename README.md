@@ -11,22 +11,30 @@
 [[Video]](https://icml.cc/virtual/2020/poster/5767)
 [[GitHub]](https://github.com/YilingQiao/diffsim)
 
-## Setup
+## Setup for Ubuntu 20.04
+
+
+
 1. Create a conda virtual environment and activate it.
 ```bash
 conda create -n diffsim python=3.6 -y
-conda activate diffsim
+conda activate diffsim 
+```
 
-# install dependencies
-sudo apt install gcc-4.8 gcc-5 **gfortran-4.8**
+2. Follow these [instructions](https://askubuntu.com/questions/1235819/ubuntu-20-04-gcc-version-lower-than-gcc-7) to enable downloads of gcc versions < 7.
+
+3. Install dependences: 
+```
+# install dependencies - gfortran version must match gcc versions; this is a modification from the original instructions.
+# otherwise, compilation will say that gfortran cannot be found by ld. 
+sudo apt install gcc-4.8 gcc-5 g++-4.8 g++-5 gfortran-4.8
 sudo apt-get install libblas-dev liblapack-dev
 sudo apt-get install libopenblas-dev
-~~sudo apt-get install gfortran~~
 sudo apt-install scons
 sudo apt-install libpng-dev
 ```
 
-2. Download and build the project.
+4. Download and build the project.
 ```bash
 git clone git@github.com:YilingQiao/diffsim.git
 cd diffsim
@@ -34,7 +42,7 @@ pip install -r requirements.txt
 bash script_build.sh
 cd pysim
 ```
-3. Run the examples
+5. Run the examples
 ## Examples
 ### Optimize an inverse problem
 ```bash

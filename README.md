@@ -2,8 +2,9 @@
 
 
 # Scalable Differentiable Physics for Learning and Control
-
 *Yi-Ling Qiao, Junbang Liang, Vladlen Koltun, Ming C. Lin*
+
+** Forked from Yi-Ling's original repository. This version is adapted for Ubuntu 20.04 / Python 3 compilation. ** 
 
 [[Project]](https://gamma.umd.edu/researchdirections/mlphysics/diffsim/)
 [[arXiv]](https://arxiv.org/abs/2007.02168)

@@ -15,7 +15,7 @@ setup(
 #                'pybind/bind-ori.cpp',
                 'pybind/bind.cpp',
             ],
-            libraries=['make_pytorch','json','taucs','alglib',
+            libraries=['make_pytorch','json','taucs','alglib', 
             #'png','z','lapack','blas','boost_system-mt','boost_filesystem-mt','boost_thread-mt','gomp','glut','GLU','GL','glapi','GLdispatch'],
             'png','z','lapack','blas','boost_system','boost_filesystem','boost_thread','gomp','glut','GLU','GL'],
             library_dirs=['objs','./arcsim/dependencies/lib'],

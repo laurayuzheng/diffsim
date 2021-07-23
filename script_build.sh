@@ -1,8 +1,8 @@
-sudo ./change_gcc.sh 4.8
+sudo bash ./change_gcc.sh 4.8
 cd arcsim/dependencies/
-make 
+make
 cd ../..
-sudo ./change_gcc.sh 5
+sudo bash ./change_gcc.sh 5
 make -j 8
 cd pysim
 ln -s ../arcsim/conf ./conf

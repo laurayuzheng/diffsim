@@ -1,4 +1,4 @@
-#!/bin/sh 
+#!/bin/bash 
 
 # The first task is to figure out OSTYPE.
 # In most cases it is set automatically before
@@ -75,4 +75,3 @@ else
 fi
 
 # end of script
-

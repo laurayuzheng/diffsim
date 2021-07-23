@@ -15,7 +15,7 @@ lib/libjson.a:
 	cp jsoncpp/libs/linux-gcc-*/libjson_linux-gcc-*_libmt.a lib/libjson.a
 
 lib/libtaucs.a:
-	cd taucs && ./configure module=\!METIS && $(MAKE)
+	cd taucs && ./configure --enable-shared module=\!METIS && $(MAKE)
 	mkdir -p include/ lib/
 	cp taucs/build/*/*.h taucs/src/*.h include/
 	cp taucs/lib/*/libtaucs.a lib/
